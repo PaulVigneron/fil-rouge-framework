@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paul\\Desktop\\Framework web\\mvc\\App\\App.csproj": {}
+    "/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paul\\Desktop\\Framework web\\mvc\\App\\App.csproj": {
+    "/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paul\\Desktop\\Framework web\\mvc\\App\\App.csproj",
+        "projectUniqueName": "/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/App.csproj",
         "projectName": "App",
-        "projectPath": "C:\\Users\\Paul\\Desktop\\Framework web\\mvc\\App\\App.csproj",
-        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paul\\Desktop\\Framework web\\mvc\\App\\obj\\",
+        "projectPath": "/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/App.csproj",
+        "packagesPath": "/Users/clementmanant/.nuget/packages/",
+        "outputPath": "/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/clementmanant/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,9 +38,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.Mysql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
@@ -61,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

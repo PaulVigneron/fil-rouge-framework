@@ -1,0 +1,43 @@
+@model App.ViewModels.RaceDetailsViewModel
+
+@{
+    ViewData["Title"] = "DetailsRace";
+}
+
+<h1>@Model.HeaderTitle</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Race Name
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Model.Course.Id
+            </td>
+            <td>
+                @Model.HeaderTitle
+            </td>
+            <td>
+                @Model.Course.EventDate.ToShortDateString()
+            </td>
+            <td>
+                <a asp-controller="Races" asp-action="Edit">Edit race n°@Model.Course.Id</a> |
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    </tbody>
+</table>

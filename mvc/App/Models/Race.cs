@@ -7,8 +7,7 @@ namespace App.Models
     {
         public int Id { get; set; }
 
-        [Required]
         public string? Name { get; set; }
-        public DateOnly EventDate { get; set; }
+        public DateTime EventDate { get; set; }
     }
 }

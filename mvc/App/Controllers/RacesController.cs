@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using App.Data;
 using App.Models;
 using App.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -11,30 +12,38 @@ namespace App.Controllers
 {
     public class RacesController : Controller
     {
+        private readonly AppDbContext _dbContext;
+        public RacesController(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         // GET: Races
         public ActionResult Index()
         {
+            var races = _dbContext.Races.ToList();
+            /*
             var races = new List<Race>()
             {
                 new Race()
                 {
                     Id = 1,
                     Name = "Ma course 123",
-                    EventDate = new DateOnly(2022, 04, 02)
+                    EventDate = new DateTime(2022, 04, 02)
                 },
                 new Race()
                 {
                     Id = 2,
                     Name = "Ma super pas course",
-                    EventDate = new DateOnly(2022, 02, 02)
+                    EventDate = new DateTime(2022, 02, 02)
                 },
                 new Race()
                 {
                     Id = 3,
                     Name= "Ma course pourrie",
-                    EventDate = new DateOnly(2022, 04, 02)
+                    EventDate = new DateTime(2022, 04, 02)
                 }
-            };
+            }; */
 
             var raceListViewModel = new RaceListViewModel(
                 races,
@@ -47,8 +56,19 @@ namespace App.Controllers
         // GET: Races/Details/5
         public ActionResult Details(int id)
         {
+            try {
+                var race = _dbContext.Races.Single(e => e.Id == id);
+                //var race2 = _dbContext.Races.(e => e.Id == id);
 
-            return View();
+                var raceDetailsViewModel = new RaceDetailsViewModel(
+                    race,
+                    race.Name
+                );
+                return View("DetailsRace", raceDetailsViewModel);
+            } catch (InvalidOperationException e) {
+                Console.WriteLine(e);
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         // GET: Races/Create
@@ -67,11 +87,18 @@ namespace App.Controllers
                 if (ModelState.IsValid)
                 {
                     // TODO: Add insert logic here
+                    Race newRace = new()
+                    {
+                        Name = race.RaceName,
+                        EventDate = race.RaceDate,
+                    };
+
+                    _dbContext.Races.Add(newRace);
+                    _dbContext.SaveChanges();
+
                     return RedirectToAction(nameof(Index));
                 }
-                
                 return View("CreateRace");
-                
             }
             catch
             {
