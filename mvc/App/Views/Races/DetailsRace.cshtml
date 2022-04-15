@@ -34,9 +34,7 @@
             </td>
             <td>
                 <a asp-controller="Races" asp-action="Edit">Edit race n°@Model.Course.Id</a> |
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                <a asp-controller="Races" asp-action="Delete">Delete race n°@Model.Course.Id</a>
             </td>
         </tr>
     </tbody>

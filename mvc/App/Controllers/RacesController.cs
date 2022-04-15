@@ -12,16 +12,17 @@ namespace App.Controllers
 {
     public class RacesController : Controller
     {
-        private readonly AppDbContext _dbContext;
-        public RacesController(AppDbContext dbContext)
+        private readonly IRepository<Race> _raceRepository;
+        public RacesController(IRepository<Race> raceRepository)
         {
-            _dbContext = dbContext;
+            _raceRepository = raceRepository;
         }
 
         // GET: Races
         public ActionResult Index()
         {
-            var races = _dbContext.Races.ToList();
+            var races = _raceRepository.GetAll();
+            // var races = _dbContext.Races.ToList();
             /*
             var races = new List<Race>()
             {
@@ -57,7 +58,7 @@ namespace App.Controllers
         public ActionResult Details(int id)
         {
             try {
-                var race = _dbContext.Races.Single(e => e.Id == id);
+                var race = _raceRepository.GetById(id);
                 //var race2 = _dbContext.Races.(e => e.Id == id);
 
                 var raceDetailsViewModel = new RaceDetailsViewModel(
@@ -93,8 +94,8 @@ namespace App.Controllers
                         EventDate = race.RaceDate,
                     };
 
-                    _dbContext.Races.Add(newRace);
-                    _dbContext.SaveChanges();
+                    _raceRepository.Add(newRace);
+                    _raceRepository.Commit();
 
                     return RedirectToAction(nameof(Index));
                 }
