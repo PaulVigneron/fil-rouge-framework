@@ -1,4 +1,3 @@
-
 using System.ComponentModel.DataAnnotations;
 
 namespace App.Models
@@ -9,5 +8,7 @@ namespace App.Models
 
         public string? Name { get; set; }
         public DateTime EventDate { get; set; }
+        public int MaxParticipants { get; set; }
+        public int NumberParticipants { get; set; } = 0;
     }
 }

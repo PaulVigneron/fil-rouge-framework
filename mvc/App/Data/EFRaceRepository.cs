@@ -20,6 +20,11 @@ namespace App.Data
             return _dbContext.SaveChanges();
         }
 
+        public Race Delete(Race model)
+        {
+            return _dbContext.Races.Remove(model).Entity;
+        }
+
         public List<Race> GetAll()
         {
             return _dbContext.Races.ToList();

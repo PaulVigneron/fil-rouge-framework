@@ -10,5 +10,7 @@ namespace App.ViewModels
         [Required]
         [DataType(DataType.DateTime)]
         public DateTime RaceDate { get; set; }
+
+        public int RaceMaxParticipants { get; set; } = 20;
     }
 }

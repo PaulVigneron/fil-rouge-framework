@@ -6,5 +6,6 @@ namespace App.Data
         TModel GetById(int id);
         TModel Add(TModel model);
         int Commit();
+        TModel Delete(TModel model);
     }
 }

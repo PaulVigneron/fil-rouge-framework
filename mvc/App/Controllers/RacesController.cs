@@ -59,8 +59,6 @@ namespace App.Controllers
         {
             try {
                 var race = _raceRepository.GetById(id);
-                //var race2 = _dbContext.Races.(e => e.Id == id);
-
                 var raceDetailsViewModel = new RaceDetailsViewModel(
                     race,
                     race.Name
@@ -87,11 +85,11 @@ namespace App.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    // TODO: Add insert logic here
                     Race newRace = new()
                     {
                         Name = race.RaceName,
                         EventDate = race.RaceDate,
+                        MaxParticipants = race.RaceMaxParticipants,
                     };
 
                     _raceRepository.Add(newRace);
@@ -133,24 +131,16 @@ namespace App.Controllers
         // GET: Races/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: Races/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
             try
             {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
+                var race = _raceRepository.GetById(id);
+                _raceRepository.Delete(race);
+                _raceRepository.Commit();
             }
             catch
             {
-                return View();
             }
+            return RedirectToAction(nameof(Index));
         }
     }
 }
