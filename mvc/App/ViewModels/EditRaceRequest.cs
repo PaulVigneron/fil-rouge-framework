@@ -2,10 +2,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace App.ViewModels
 {
-    public class CreateRaceRequest
+    public class EditRaceRequest
     {
         [Required(ErrorMessage="Vous devez renseigner un nom à votre course")]
-        public string? RaceName { get; set; }
+        public string RaceName { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]

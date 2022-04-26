@@ -7,5 +7,6 @@ namespace App.Data
         TModel Add(TModel model);
         int Commit();
         TModel Delete(TModel model);
+        TModel Edit(TModel model);
     }
 }

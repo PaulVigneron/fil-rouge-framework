@@ -22,29 +22,6 @@ namespace App.Controllers
         public ActionResult Index()
         {
             var races = _raceRepository.GetAll();
-            // var races = _dbContext.Races.ToList();
-            /*
-            var races = new List<Race>()
-            {
-                new Race()
-                {
-                    Id = 1,
-                    Name = "Ma course 123",
-                    EventDate = new DateTime(2022, 04, 02)
-                },
-                new Race()
-                {
-                    Id = 2,
-                    Name = "Ma super pas course",
-                    EventDate = new DateTime(2022, 02, 02)
-                },
-                new Race()
-                {
-                    Id = 3,
-                    Name= "Ma course pourrie",
-                    EventDate = new DateTime(2022, 04, 02)
-                }
-            }; */
 
             var raceListViewModel = new RaceListViewModel(
                 races,
@@ -60,8 +37,7 @@ namespace App.Controllers
             try {
                 var race = _raceRepository.GetById(id);
                 var raceDetailsViewModel = new RaceDetailsViewModel(
-                    race,
-                    race.Name
+                    race
                 );
                 return View("DetailsRace", raceDetailsViewModel);
             } catch (InvalidOperationException e) {
@@ -106,26 +82,52 @@ namespace App.Controllers
         }
 
         // GET: Races/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            try {
+                var race = _raceRepository.GetById(id);
+                EditRaceRequest EditViewModel = new ()
+                {
+                    RaceName = race.Name,
+                    RaceDate = race.EventDate,
+                    RaceMaxParticipants = race.MaxParticipants,
+                };
+                return View("EditRace", EditViewModel);
+            } catch (InvalidOperationException e) {
+                Console.WriteLine(e);
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         // POST: Races/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(EditRaceRequest race, int id)
         {
             try
             {
-                // TODO: Add update logic here
-
+                var oldRace = _raceRepository.GetById(id);
+                if (ModelState.IsValid) {
+                    Race newRace = new()
+                    {
+                        Id = id,
+                        Name = race.RaceName,
+                        EventDate = race.RaceDate,
+                        MaxParticipants = race.RaceMaxParticipants,
+                    };
+                    _raceRepository.Delete(oldRace);
+                    _raceRepository.Add(newRace);
+                    _raceRepository.Commit();
+                } else {
+                    return View("RaceList");
+                }
+            } catch (NullReferenceException e)
+            {
+                Console.WriteLine(e);
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Races/Delete/5

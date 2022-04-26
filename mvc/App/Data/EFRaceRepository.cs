@@ -25,6 +25,13 @@ namespace App.Data
             return _dbContext.Races.Remove(model).Entity;
         }
 
+        public Race Edit(Race model)
+        {
+            var race = _dbContext.Races.Single(r => r.Id == model.Id);
+            // TODO: Modify values
+            return race;
+        }
+
         public List<Race> GetAll()
         {
             return _dbContext.Races.ToList();

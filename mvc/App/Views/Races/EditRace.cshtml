@@ -1,0 +1,40 @@
+@model App.ViewModels.EditRaceRequest
+
+@{
+    ViewData["Title"] = "EditRace";
+}
+
+<h1>EditRace</h1>
+
+<h4>Race</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.RaceName" class="control-label"></label>
+                <input asp-for="@Model.RaceName" class="form-control" value="@Model.RaceName" />
+                <span asp-validation-for="@Model.RaceName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RaceDate" class="control-label"></label>
+                <input asp-for="@Model.RaceDate" class="form-control" value="@Model.RaceDate" />
+                <span asp-validation-for="@Model.RaceDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RaceMaxParticipants" class="control-label"></label>
+                <input asp-for="@Model.RaceMaxParticipants" class="form-control" value="@Model.RaceMaxParticipants" />
+                <span asp-validation-for="@Model.RaceMaxParticipants" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="EditRace" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZXMvRGV0YWlsc1JhY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/Views/Races/EditRace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZXMvRWRpdFJhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/clementmanant/Documents/B2/Framework Web/fil-rouge-framework/mvc/App/Views/Races/RaceList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZXMvUmFjZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
