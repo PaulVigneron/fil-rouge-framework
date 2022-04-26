@@ -1,0 +1,60 @@
+@model App.ViewModels.RaceListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "_MyLayout";
+}
+
+<h1>@Model.HeaderTitle</h1>
+
+<p>
+    <a asp-action="Create">Create a Race</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Race Name
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Free Places
+            </th>
+            <th>
+                Start Time
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.RaceList) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @item.EventDate.ToShortDateString()
+            </td>
+            <td>
+                @item.NumberParticipants / @item.FreePlaces
+            </td>
+            <td>
+                 @item.EventDate.ToShortTimeString()
+            </td>
+            <td>
+                <a asp-controller="Races" asp-action="Edit" asp-route-id="@item.Id">Edit race</a> |
+                <a asp-controller="Races" asp-action="Details" asp-route-id="@item.Id">Details race</a> |
+                <a asp-controller="Races" asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete this?')">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
