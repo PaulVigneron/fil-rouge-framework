@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OfrDPlyVPx9w9enIfr/eIuH66DS00CCM+tuL5sVVUVEeZ2QYXdjrdVMTW1Z6HI/rpK1LRJLlpygIfS1bphr8LA==",
+  "dgSpecHash": "GBkGhJa7wS2lsfRQtFtOIdQxoqtr8xeu3tHLl5iWgXAF0Zm2TrXfbBUH/jIgld+jswCVCbXApeeP4IEtQTF77w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\Test.csproj",
+  "projectFilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theoq\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\theoq\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

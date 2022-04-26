@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\Test.csproj": {}
+    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\Test.csproj": {}
   },
   "projects": {
-    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\Test.csproj": {
+    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\Test.csproj",
+        "projectUniqueName": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\Test.csproj",
+        "projectPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\theoq\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\Test\\obj\\",
+        "outputPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

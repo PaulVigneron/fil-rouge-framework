@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj": {}
+    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj": {
+    "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
+        "projectUniqueName": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
         "projectName": "App",
-        "projectPath": "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
+        "projectPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
         "packagesPath": "C:\\Users\\theoq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\obj\\",
+        "outputPath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

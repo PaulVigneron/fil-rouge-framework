@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\App.csproj",
+  "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\App.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,88 +16298,88 @@
   "RootNamespace": "App",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Vehicules\\VehiculesList.cshtml",
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Vehicules\\VehiculesList.cshtml",
       "TargetPath": "Views\\Vehicules\\VehiculesList.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Drivers\\Profil.cshtml",
-      "TargetPath": "Views\\Drivers\\Profil.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Shared\\_MyLayout.cshtml",
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Shared\\_MyLayout.cshtml",
       "TargetPath": "Views\\Shared\\_MyLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Drivers\\CreateDriver.cshtml",
-      "TargetPath": "Views\\Drivers\\CreateDriver.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Drivers\\Login.cshtml",
-      "TargetPath": "Views\\Drivers\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Races\\RaceList.cshtml",
-      "TargetPath": "Views\\Races\\RaceList.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Races\\CreateRace.cshtml",
-      "TargetPath": "Views\\Races\\CreateRace.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Races\\CreateRace.cshtml",
+      "TargetPath": "Views\\Races\\CreateRace.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Drivers\\Login.cshtml",
+      "TargetPath": "Views\\Drivers\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Drivers\\CreateDriver.cshtml",
+      "TargetPath": "Views\\Drivers\\CreateDriver.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Races\\RaceList.cshtml",
+      "TargetPath": "Views\\Races\\RaceList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\Views\\Drivers\\Profil.cshtml",
+      "TargetPath": "Views\\Drivers\\Profil.cshtml",
       "FileKind": "mvc"
     }
   ],

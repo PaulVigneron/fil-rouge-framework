@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3xEliYE31sl70Qw2fFeG9iGXKmGN25H7mUxnyWiIfNy/lKQf8ps//SGaS4yZvbUH/mpvtq547gNlsiuvOGeG4w==",
+  "dgSpecHash": "ls3h2i/HBF3tP4UqOn03tjE0myXzExgQAYbwEYoQcOossC4xIZsOq2NuXjb2tjrjdQ+MI3xspPyOdvyr31WuDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\Sauvegarde projet fil rouge (identity setup avec usedefaultUi)\\mvc-B2B\\App\\App.csproj",
+  "projectFilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\Backup projet\\mvc-B2B\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theoq\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\theoq\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZisEWuxrlDZ4CdKLHTVb29pXH+hRVfCJSqS15GqO5leamjw86ag00APKKVxNyLoNmBz7x5coTR8gcQh9YkQtg==",
+  "dgSpecHash": "DgGxUohl+yFXxCTq97oNbCH5dsTG8G9wemXmvberDXNjl8Dkw+HAQzpW4KF6zg+B+2kaMoaq9jUUXKXXti7X3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
+  "projectFilePath": "c:\\Users\\theoq\\Desktop\\Ynov\\Deuxieme_Annee\\Framework Web\\fil-rouge-framework\\mvc-B2B\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theoq\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\theoq\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
