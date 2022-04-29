@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using App.Data;
 using App.Models;
 using App.ViewModels;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.Controllers
@@ -17,18 +12,23 @@ namespace App.Controllers
         {
             _raceRepository = raceRepository;
         }
-
         // GET: Races
         public ActionResult Index()
         {
             var races = _raceRepository.GetAll();
-
+            IEnumerable<App.Models.Race> query = from race in races orderby race.EventDate select race;
             var raceListViewModel = new RaceListViewModel(
-                races,
+                query,
                 "Liste de courses"
             );
 
             return View("RaceList", raceListViewModel);
+        }
+
+        // GET: Races/
+        public ActionResult List()
+        {
+            return Ok("LIST ACTION CALLED !");
         }
 
         // GET: Races/Details/5
@@ -49,6 +49,7 @@ namespace App.Controllers
         // GET: Races/Create
         public ActionResult Create()
         {
+
             return View("CreateRace");
         }
 
@@ -61,11 +62,12 @@ namespace App.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    // TODO: Add insert logic here
                     Race newRace = new()
                     {
                         Name = race.RaceName,
                         EventDate = race.RaceDate,
-                        MaxParticipants = race.RaceMaxParticipants,
+                        FreePlaces = race.FreePlaces
                     };
 
                     _raceRepository.Add(newRace);
@@ -73,6 +75,7 @@ namespace App.Controllers
 
                     return RedirectToAction(nameof(Index));
                 }
+
                 return View("CreateRace");
             }
             catch
@@ -91,7 +94,7 @@ namespace App.Controllers
                 {
                     RaceName = race.Name,
                     RaceDate = race.EventDate,
-                    RaceMaxParticipants = race.MaxParticipants,
+                    FreePlaces = race.FreePlaces,
                 };
                 return View("EditRace", EditViewModel);
             } catch (InvalidOperationException e) {
@@ -114,7 +117,8 @@ namespace App.Controllers
                         Id = id,
                         Name = race.RaceName,
                         EventDate = race.RaceDate,
-                        MaxParticipants = race.RaceMaxParticipants,
+                        FreePlaces = race.FreePlaces,
+                        NumberParticipants = oldRace.NumberParticipants,
                     };
                     _raceRepository.Delete(oldRace);
                     _raceRepository.Add(newRace);
@@ -143,6 +147,23 @@ namespace App.Controllers
             {
             }
             return RedirectToAction(nameof(Index));
+        }
+
+        // POST: Races/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }

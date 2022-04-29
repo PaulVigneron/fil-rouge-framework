@@ -15,7 +15,7 @@
             <div class="form-group">
                 <label asp-for="RaceName" class="control-label"></label>
                 <input asp-for="RaceName" class="form-control" />
-                <span asp-validation-for="RaceName" class="text-danger"></span>
+                <span asp-validation-for="RaceName" class="error-label"></span>
             </div>
             <div class="form-group">
                 <label asp-for="RaceDate" class="control-label"></label>
@@ -23,9 +23,9 @@
                 <span asp-validation-for="RaceDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RaceMaxParticipants" class="control-label"></label>
-                <input asp-for="RaceMaxParticipants" value="15" class="form-control" />
-                <span asp-validation-for="RaceMaxParticipants" class="text-danger"></span>
+                <label asp-for="FreePlaces" class="control-label"></label>
+                <input asp-for="FreePlaces" class="form-control" value="15" />
+                <span asp-validation-for="FreePlaces" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

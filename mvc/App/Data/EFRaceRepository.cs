@@ -5,10 +5,10 @@ namespace App.Data
     public class EFRaceRepository : IRepository<Race>
     {
         private readonly AppDbContext _dbContext;
-
         public EFRaceRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
+
         }
         public Race Add(Race model)
         {

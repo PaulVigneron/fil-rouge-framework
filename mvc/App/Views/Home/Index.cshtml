@@ -2,7 +2,178 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+  
+<!DOCTYPE html> 
+<body>
+  <div>
+    <style type="text/css">
+		body {
+			background: #f6f6f6;
+		}
+
+		.countdownContainer{
+			position: absolute;;
+			top: 30%;
+			left: 30%;
+			transform : translateX(-50%) translateY(-50%);
+			padding: 20px;
+
+		}
+
+		.info {
+			font-size: 50px;
+		}
+		</style>
+    </body>
+  <table id="countdownContainer" class="countdownContainer">
+<tbody><tr class="info">
+<td colspan="4">    ⏳Prochaine course dans⌛️</td>
+</tr>
+<tr class="info">
+<td id="Jours"></td>
+<td id="Heures"></td>
+<td id="Minutes"></td>
+<td id="Secondes"></td>
+</tr>
+<tr>
+<td>Jours</td>
+<td>Heures</td>
+<td>Minutes</td>
+<td>Secondes</td>
+</tr>
+</tbody></table>
+<h2 id="greetingMsg" style="display:none;">🚨Le moment de la course est arrivé !🏎</h2>
+    <script type="text/javascript">    
+    
+  function countdown() {
+  var now = new Date();
+  var eventDate = new Date(2022, 04, 02, 11, 00, 00);
+  
+
+
+  var currentTiime = now.getTime();
+  var eventTime = eventDate.getTime();
+
+  var remTime = eventTime - currentTiime;
+
+  if (remTime <= 0) {
+    document.getElementById("countdownContainer").style.display = "none";
+    document.getElementById("greetingMsg").style.display = "";
+    return;
+  }
+
+  var s = Math.floor(remTime / 1000);
+  var m = Math.floor(s / 60);
+  var h = Math.floor(m / 60);
+  var d = Math.floor(h / 24);
+
+  h %= 24;
+  m %= 60;
+  s %= 60;
+
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
+  document.getElementById("Jours").textContent = d;
+  document.getElementById("Jours").innerText = d;
+
+  document.getElementById("Heures").textContent = h;
+  document.getElementById("Minutes").textContent = m;
+  document.getElementById("Secondes").textContent = s;
+
+  setTimeout(countdown, 1000);
+}
+countdown();
+</script>
 </div>
+
+<div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style type="text/css">
+		body {
+			background: #f6f6f6;
+		}
+
+		.countdownContainer{
+			position: absolute;;
+			top: 50%;
+			left: 50%;
+			transform : translateX(-50%) translateY(-50%);
+			text-align: center;
+			padding: 20px;
+
+		}
+
+		.info {
+			font-size: 70px;
+		}
+    #carouselExemple {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.carousel-item p {
+  width: 100%;
+  height: auto;
+}
+		</style>
+</div>
+
+    <div id="carouselExemple" class="carousel slide" data-ride="carousel" data-interval="3500">
+
+        
+
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <p>
+                  <font size="5.5"><B>COURSE : 02/05/2022</B></font><br>
+                </p>
+            </div>
+
+            <div class="carousel-item">
+                <p>
+                  <font size="5.5"><B>COURSE : 09/05/2022</B></font><br>
+                </p>
+            </div>
+
+            <div class="carousel-item">
+                <p>
+                  <font size="5.5"><B>COURSE : 15/05/2022</B></font><br>
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        $('.carousel').carousel({
+
+            pause: "null"
+
+        })
+    </script>
+  </div>
+</div>
+
