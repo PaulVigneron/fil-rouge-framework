@@ -23,15 +23,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Races" asp-action="Index">All races</a>
+                            <a class="nav-link text-dark" asp-controller="Races" asp-action="Index">All Races</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Races" asp-action="Create">Create race</a>
+                            <a class="nav-link text-dark" asp-controller="Races" asp-action="Create" asp-route-toto="1234">Create RACE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Vehicules" asp-action="Index">All Vehicules</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>

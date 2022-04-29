@@ -1,14 +1,11 @@
-
-using System.ComponentModel.DataAnnotations;
-
 namespace App.Models
 {
     public class Race
     {
         public int Id { get; set; }
-
-        [Required]
         public string? Name { get; set; }
-        public DateOnly EventDate { get; set; }
+        public DateTime EventDate { get; set; }
+        public int FreePlaces { get; set; }
+        public int NumberParticipants { get; set; }
     }
 }

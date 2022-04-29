@@ -1,0 +1,59 @@
+@model App.ViewModels.VehiculesListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@Model.HeaderTitle</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Brand
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                DateBuild
+            </th>
+            <th>
+                Power
+            </th>
+            <th>
+                Image
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.VehiculeList)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateBuild)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Power)
+        </td>
+        <td>
+            <img src="@Url.Content(item.Image)" alt="" width="400" height="250" />
+        </td>
+        
+    </tr>
+}
+    </tbody>
+</table>
